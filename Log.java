@@ -53,7 +53,8 @@ final class Log {
         final float logsNumber = (TRUCK_CAPACITY / logsLength) / LOG_DENSITY;
 
         System.out.println(
-            "\nThe number of logs that can be put in the truck are:" + logsNumber
+            "\nThe number of logs that can be put in the truck are:"
+            + logsNumber
         );
 
         System.out.println("\nDone.");
