@@ -44,13 +44,17 @@ final class Log {
         // get the logs length
         // code from https://www.w3schools.com/java/java_user_input.asp
         final Scanner input = new Scanner(System.in);
-        System.out.println("What is the length of the logs? (0.25, 0.5, or 1 meter)");
+        System.out.println(
+            "What is the length of the logs? (0.25, 0.5, or 1 meter)"
+        );
 
         final float logsLength = input.nextFloat();
 
         final float logsNumber = (TRUCK_CAPACITY / logsLength) / LOG_DENSITY;
 
-        System.out.println("\nThe number of logs that can be put in the truck are:" + logsNumber);
+        System.out.println(
+            "\nThe number of logs that can be put in the truck are:" + logsNumber
+        );
 
         System.out.println("\nDone.");
     }
