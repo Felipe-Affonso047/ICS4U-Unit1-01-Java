@@ -6,14 +6,21 @@
 * @since   2021-11-18
 */
 
+import java.util.Scanner;
+
 /**
-* This is the log program
+* This is the log program.
 */
-
-// code from https://www.w3schools.com/java/java_user_input.asp
-import java.util.Scanner; // import the Scanner class
-
 final class Log {
+    /**
+    * Created constants.
+    */
+    public static final double LOG_DENSITY = 20;
+
+    /**
+    * Created constants.
+    */
+    public static final double TRUCK_CAPACITY = 1100;
 
     /**
     * Prevent instantiation.
@@ -34,18 +41,16 @@ final class Log {
     */
     public static void main(final String[] args) {
 
-	float truckCapacity = 1100;
-	float logDensity = 20;
-
         // get the logs length
-	Scanner input = new Scanner(System.in);  // Create a Scanner object
+        // code from https://www.w3schools.com/java/java_user_input.asp
+        final Scanner input = new Scanner(System.in);
         System.out.println("What is the length of the logs? (0.25, 0.5, or 1 meter)");
 
-	float logsLength = input.nextFloat();
+        final float logsLength = input.nextFloat();
 
-	float logsNumber = (truckCapacity / logsLength) / logDensity;
+        final float logsNumber = (TRUCK_CAPACITY / logsLength) / LOG_DENSITY;
 
-	System.out.println("\nThe number of logs that can be put in the truck are:" + logsNumber);
+        System.out.println("\nThe number of logs that can be put in the truck are:" + logsNumber);
 
         System.out.println("\nDone.");
     }
