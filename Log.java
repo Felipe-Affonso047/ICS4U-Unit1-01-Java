@@ -48,9 +48,9 @@ final class Log {
             "What is the length of the logs? (0.25, 0.5, or 1 meter)"
         );
 
-        final float logsLength = input.nextFloat();
+        final double logsLength = input.nextFloat();
 
-        final float logsNumber = (TRUCK_CAPACITY / logsLength) / LOG_DENSITY;
+        final double logsNumber = (TRUCK_CAPACITY / logsLength) / LOG_DENSITY;
 
         System.out.println(
             "\nThe number of logs that can be put in the truck are:"
